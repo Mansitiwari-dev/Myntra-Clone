@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myntra Clone</title>
+  <link rel="stylesheet" href="design.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Myntra" />
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="decor.html">Decor</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </div>
+
+      <div class="icons">
+        <button class="icon-button" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+        <button class="icon-button" title="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="hero-eyebrow"><i class="fa-solid fa-sparkles"></i> New Season / 2025 Edit</span>
+          <h1>Design-first fashion, beauty & decor—curated daily for you.</h1>
+          <p>Handpicked fits, clean silhouettes and statement textures with fast delivery, easy returns and member-only drops.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="women.html">Shop Women's</a>
+            <a class="btn btn-ghost" href="men.html">Explore Men's</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-card">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div><strong>Express delivery</strong><small>Metro within 48 hrs</small></div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-repeat"></i>
+              <div><strong>14-day returns</strong><small>Instant credit to wallet</small></div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <div><strong>Stylist picks</strong><small>Refreshed every week</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <span class="hero-badge">4.8 ★ Loved by 10k+</span>
+          <img src="images/SecF.jpg" alt="Statement fashion" />
+          <div class="hero-floating-card">
+            <h4>Weekend drop</h4>
+            <p>Soft tailoring + structured denim with artisanal accessories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE STRIP -->
+    <div class="feature-strip">
+      <div class="feature-card">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+          <h4>Clean Ingredients</h4>
+          <p>Skin-friendly beauty and responsibly sourced fabrics.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-gift"></i>
+        <div>
+          <h4>Member Rewards</h4>
+          <p>Earn coins on every order and unlock limited drops.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+          <h4>Concierge Support</h4>
+          <p>Live chat stylists to size, pair and style your looks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY -->
+    <section class="section categories">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Shop by Category</div>
+          <div class="section-subtitle">Switch lanes effortlessly—curated per mood.</div>
+        </div>
+        <a class="btn btn-ghost" href="beauty.html">View All</a>
+      </div>
+      <div class="category-container">
+        <div class="category-card">
+          <img src="images/secM.jpg" alt="Men">
+          <p>Men</p>
+        </div>
+        <div class="category-card">
+          <img src="images/SecF.jpg" alt="Women">
+          <p>Women</p>
+        </div>
+        <div class="category-card">
+          <img src="images/SecK.jpg" alt="Kids">
+          <p>Kids</p>
+        </div>
+        <div class="category-card">
+          <img src="images/plantwall.jpg" alt="Decor">
+          <p>Decor</p>
+        </div>
+        <div class="category-card">
+          <img src="images/Makeup.jpg" alt="Beauty">
+          <p>Beauty</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products" id="trending">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Trending Now</div>
+          <div class="section-subtitle">The most added-to-bag picks this week.</div>
+        </div>
+        <div class="filters">
+          <span class="pill active">Editor picks</span>
+          <span class="pill">Under ₹999</span>
+          <span class="pill">Work-ready</span>
+          <span class="pill">Party</span>
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">New</span>
+            <img src="images/Jewell.jpg" alt="Necklace">
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Tanishq</span>
+            <h3>Statement Necklace</h3>
+            <div class="price-row">
+              <span>₹499</span>
+              <span class="price-muted">₹799</span>
+              <span class="pill">-35%</span>
+            </div>
+            <div class="meta-row">
+              <i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.7
+              <span>2k reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">Hot</span>
+            <img src="images/ManP1.jpg" alt="Men">
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Highlander</span>
+            <h3>Layered Co-ord Set</h3>
+            <div class="price-row">
+              <span>₹699</span>
+              <span class="price-muted">₹999</span>
+              <span class="pill">-30%</span>
+            </div>
+            <div class="meta-row">
+              <i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.5
+              <span>1.3k reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">Limited</span>
+            <img src="images/Pro3.jpg" alt="Jeans">
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">One Sided</span>
+            <h3>Structured Denim</h3>
+            <div class="price-row">
+              <span>₹799</span>
+              <span class="price-muted">₹1199</span>
+              <span class="pill">-40%</span>
+            </div>
+            <div class="meta-row">
+              <i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.6
+              <span>860 reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION PANELS -->
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Curated Rooms</div>
+          <div class="section-subtitle">Elevate your space while you elevate your closet.</div>
+        </div>
+      </div>
+      <div class="collection-panels">
+        <div class="collection-card">
+          <img src="images/plantwall.jpg" alt="Decor collection">
+          <div class="collection-content">
+            <div>
+              <p>Minimal decor</p>
+              <h3>Botanical calm</h3>
+            </div>
+            <a class="btn btn-primary" href="decor.html">Shop Decor</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="images/women2.jpg" alt="Beauty collection">
+          <div class="collection-content">
+            <div>
+              <p>Skin-loving</p>
+              <h3>Clean beauty edit</h3>
+            </div>
+            <a class="btn btn-ghost" href="beauty.html">See Beauty</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="images/SecK.jpg" alt="Kids collection">
+          <div class="collection-content">
+            <div>
+              <p>Family first</p>
+              <h3>Play-proof fits</h3>
+            </div>
+            <a class="btn btn-ghost" href="kids.html">Shop Kids</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div>
+        <h2>Stay ahead of the drop</h2>
+        <p>Get early access to fresh edits, size guides and member-only prices. No spam—just good taste.</p>
+      </div>
+      <form>
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button type="button" class="btn btn-primary">Notify Me</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>ONLINE SHOPPING</h3>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="decor.html">Decor & Essentials</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>CUSTOMER POLICIES</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">T&C</a></li>
+          <li><a href="#">Track Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>KEEP IN TOUCH</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Myntra Clone. Designed by Mansi Tiwari.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
