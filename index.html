@@ -33,8 +33,14 @@
       </div>
 
       <div class="icons">
-        <button class="icon-button" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-        <button class="icon-button" title="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-button" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge" data-role="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-button" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-badge" data-role="cart-count" hidden>0</span>
+        </button>
       </div>
     </div>
   </header>
@@ -156,8 +162,8 @@
             <span class="badge">New</span>
             <img src="images/Jewell.jpg" alt="Necklace">
             <div class="product-actions">
-              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" title="Wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" title="Add to bag" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -180,8 +186,8 @@
             <span class="badge">Hot</span>
             <img src="images/ManP1.jpg" alt="Men">
             <div class="product-actions">
-              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" title="Wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" title="Add to bag" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -204,8 +210,8 @@
             <span class="badge">Limited</span>
             <img src="images/Pro3.jpg" alt="Jeans">
             <div class="product-actions">
-              <button class="product-action-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn" title="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" title="Wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" title="Add to bag" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -320,5 +326,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
+  <!-- This file exists to fix broken links to decor.html on case-sensitive paths.
+       The main page is Decor.html. -->
+
   <!-- HEADER -->
   <header>
     <div class="container navbar">
@@ -29,8 +32,14 @@
         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
       </div>
       <div class="icons">
-        <button class="icon-button" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-        <button class="icon-button" title="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-button" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge" data-role="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-button" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-badge" data-role="cart-count" hidden>0</span>
+        </button>
       </div>
     </div>
   </header>
@@ -63,8 +72,8 @@
             <span class="badge">Ambient</span>
             <img src="images/elephantwithc.webp" alt="Lamp">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -84,8 +93,8 @@
             <span class="badge">New</span>
             <img src="images/flower.jpeg" alt="Bedsheet">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -105,8 +114,8 @@
             <span class="badge">Cozy</span>
             <img src="images/gate.jpg" alt="Cushion">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -126,8 +135,8 @@
             <span class="badge">Art</span>
             <img src="images/Painting.jpg" alt="Wall Clock">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -185,5 +194,202 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decor & Essentials - Myntra Clone</title>
+  <link rel="stylesheet" href="design.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Myntra" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="decor.html">Decor</a></li> 
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </div>
+      <div class="icons">
+        <button class="icon-button" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge" data-role="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-button" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-badge" data-role="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div>
+        <span class="hero-eyebrow"><i class="fa-solid fa-couch"></i> Home stories</span>
+        <h2>Layered textures and warm accents to anchor your space.</h2>
+        <p class="section-subtitle">From sculptural lighting to botanical prints, curated for calm living.</p>
+      </div>
+      <div class="filters">
+        <span class="pill active">Living</span>
+        <span class="pill">Bedroom</span>
+        <span class="pill">Desk</span>
+        <span class="pill">Walls</span>
+      </div>
+    </section>
+
+    <section class="section products">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Home Decor & Essentials</div>
+          <div class="section-subtitle">Tactile finishes, cozy neutrals and artful highlights.</div>
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">Ambient</span>
+            <img src="images/elephantwithc.webp" alt="Lamp">
+            <div class="product-actions">
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Glow Haus</span>
+            <h3>Decorative Table Lamp</h3>
+            <div class="price-row">
+              <span>₹1499</span>
+              <span class="price-muted">₹1899</span>
+              <span class="pill">-21%</span>
+            </div>
+            <div class="meta-row"><i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.8 • warm light</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">New</span>
+            <img src="images/flower.jpeg" alt="Bedsheet">
+            <div class="product-actions">
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Loom Home</span>
+            <h3>Floral Bedsheet</h3>
+            <div class="price-row">
+              <span>₹899</span>
+              <span class="price-muted">₹1199</span>
+              <span class="pill">-25%</span>
+            </div>
+            <div class="meta-row"><i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.6 • 300 TC</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">Cozy</span>
+            <img src="images/gate.jpg" alt="Cushion">
+            <div class="product-actions">
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Nestle</span>
+            <h3>Soft Cushions Set</h3>
+            <div class="price-row">
+              <span>₹499</span>
+              <span class="price-muted">₹799</span>
+              <span class="pill">-38%</span>
+            </div>
+            <div class="meta-row"><i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.5 • plush fill</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-media">
+            <span class="badge">Art</span>
+            <img src="images/Painting.jpg" alt="Wall Clock">
+            <div class="product-actions">
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Studio Wall</span>
+            <h3>Designer Wall Clock</h3>
+            <div class="price-row">
+              <span>₹1299</span>
+              <span class="price-muted">₹1699</span>
+              <span class="pill">-24%</span>
+            </div>
+            <div class="meta-row"><i class="fa-solid fa-star" style="color:#f5a524;"></i> 4.7 • silent sweep</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>ONLINE SHOPPING</h3>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="decor.html">Decor & Essentials</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>CUSTOMER POLICIES</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">T&C</a></li>
+          <li><a href="#">Track Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>KEEP IN TOUCH</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Myntra Clone. Designed by Mansi Tiwari.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

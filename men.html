@@ -29,8 +29,14 @@
         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
       </div>
       <div class="icons">
-        <button class="icon-button" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-        <button class="icon-button" title="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-button" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge" data-role="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-button" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-badge" data-role="cart-count" hidden>0</span>
+        </button>
       </div>
     </div>
   </header>
@@ -63,8 +69,8 @@
             <span class="badge">New</span>
             <img src="images/Man1.jpg" alt="Shirt">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -84,8 +90,8 @@
             <span class="badge">Occasion</span>
             <img src="images/Man2.jpg" alt="Jeans">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -105,8 +111,8 @@
             <span class="badge">Best Seller</span>
             <img src="images/Man3.jpg" alt="T-shirt">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -126,8 +132,8 @@
             <span class="badge">Fresh</span>
             <img src="images/Man4.jpg" alt="T-shirt">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -147,8 +153,8 @@
             <span class="badge">Layer</span>
             <img src="images/Man5.jpg" alt="Jacket">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -168,8 +174,8 @@
             <span class="badge">Party</span>
             <img src="images/Men6.jpg" alt="Jacket">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -227,5 +233,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

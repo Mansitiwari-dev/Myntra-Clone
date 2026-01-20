@@ -29,8 +29,14 @@
         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
       </div>
       <div class="icons">
-        <button class="icon-button" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
-        <button class="icon-button" title="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-button" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge" data-role="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-button" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-badge" data-role="cart-count" hidden>0</span>
+        </button>
       </div>
     </div>
   </header>  
@@ -62,8 +68,8 @@
             <span class="badge">Matte</span>
             <img src="images/Makeup.jpg" alt="Lipstick">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -83,8 +89,8 @@
             <span class="badge">Precision</span>
             <img src="images/Eyelinear.jpg" alt="Perfume">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -104,8 +110,8 @@
             <span class="badge">Kit</span>
             <img src="images/Makup.jpg" alt="Face Cream">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -125,8 +131,8 @@
             <span class="badge">Glow</span>
             <img src="images/haldiset.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -146,8 +152,8 @@
             <span class="badge">Statement</span>
             <img src="images/Jewell.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -167,8 +173,8 @@
             <span class="badge">Pro</span>
             <img src="images/Brush.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -188,8 +194,8 @@
             <span class="badge">New</span>
             <img src="images/har1.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -209,8 +215,8 @@
             <span class="badge">Limited</span>
             <img src="images/harg2.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -230,8 +236,8 @@
             <span class="badge">Stack</span>
             <img src="images/Rings.jpg" alt="Makeup Kit">
             <div class="product-actions">
-              <button class="product-action-btn"><i class="fa-regular fa-heart"></i></button>
-              <button class="product-action-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="product-action-btn" data-action="wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="product-action-btn" data-action="cart" aria-label="Add to bag"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>
           </div>
           <div class="product-info">
@@ -289,5 +295,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
